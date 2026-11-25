@@ -207,6 +207,7 @@ export function buildMasterTimeline({ registry, onUpdate, onComplete }) {
   showCopy('organize', 14.65)
   hideCopy('organize', 19.15)
 
+  screen('phoneB', 'template2', 19.55, 0.6)
   pose('phoneB', 19.55, organizePose, craftBackPose, 1.6)
   pose('phoneC', 19.85, C, craftFrontPose, 1.7, 'power3.out')
   camera(19.75, { px: 0.2, py: 0.16, pz: 9.7, tx: 1.1, ty: 0.08 }, 2.1)
@@ -215,7 +216,7 @@ export function buildMasterTimeline({ registry, onUpdate, onComplete }) {
   showCopy('design', 20.25)
   hideCopy('design', 23.35)
 
-  screen('phoneC', 'welcomeKeyboard', 23.65, 0.65)
+  screen('phoneC', 'template1', 23.65, 0.65)
   pose('phoneC', 23.8, craftFrontPose, formPose, 1.45)
   pose('phoneB', 23.6, craftBackPose, exitBPose, 1.5, 'power2.in')
   camera(23.75, { px: 0.05, pz: 11.2, tx: 1.15 }, 1.5)
@@ -223,8 +224,8 @@ export function buildMasterTimeline({ registry, onUpdate, onComplete }) {
   showCopy('effortless', 24.15)
   hideCopy('effortless', 26.35)
 
-  screen('phoneA', 'home', 31.45, 0.55)
-  screen('phoneC', 'welcomeKeyboard', 31.45, 0.55)
+  screen('phoneA', 'hero', 31.45, 0.55)
+  screen('phoneC', 'template1', 31.45, 0.55)
   camera(31.35, { px: 0, py: 0.1, pz: 12.8, tx: 0, ty: 0.15, fov: 30 }, 1.75)
   pose('phoneA', 31.55, exitAPose, lineup.phoneA, 1.5, 'power3.out')
   pose('phoneB', 31.7, exitBPose, lineup.phoneB, 1.5, 'power3.out')

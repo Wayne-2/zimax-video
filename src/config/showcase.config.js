@@ -48,23 +48,28 @@ export const showcaseConfig = {
     screenHeight: 2.92,
     screenOffsetZ: 0.104,
     devices: {
-      phoneA: ['splash', 'home', 'space', 'chat'],
-      phoneB: ['space', 'feed'],
-      phoneC: ['feed', 'welcomeKeyboard', 'space'],
-      phoneD: ['post'],
-      phoneE: ['chat']
+      phoneA: ['splash', 'home', 'space', 'hero', 'chat'],
+      phoneB: ['template4', 'template2'],
+      phoneC: ['template3', 'template1'],
+      phoneD: ['template3'],
+      phoneE: ['template4']
     }
   },
 
   screens: {
-    splash: { url: '/screens/hero_image.png' },
-    home: { url: '/screens/home.mp4', video: true },
+    splash: { url: '/screens/launch_page.jpg' },
+    home: { url: '/screens/hero_page.jpg' },
     feed: { url: '/screens/feed.png' },
     post: { url: '/screens/post.jpg' },
     chat: { url: '/screens/chat.png' },
-    space: { url: '/screens/space.mp4', video: true },
+    space: { url: '/screens/template2.png' },
     welcome: { url: '/screens/welcome.png', crop: [18, 16, 364, 792] },
-    welcomeKeyboard: { url: '/screens/welcome.png', crop: [18, 16, 364, 792], generate: 'keyboard' }
+    welcomeKeyboard: { url: '/screens/welcome.png', crop: [18, 16, 364, 792], generate: 'keyboard' },
+    template1: { url: '/screens/template1.png' },
+    template2: { url: '/screens/template2.png' },
+    template3: { url: '/screens/template3.png' },
+    template4: { url: '/screens/template4.png' },
+    hero: { url: '/screens/hero_page.jpg' }
   },
 
   scenes: [
